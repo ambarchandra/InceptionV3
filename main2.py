@@ -80,10 +80,7 @@ else:
     # print(f"this is pred{prediction}")
     # print(f"this is score{score}")
     # print(f"this is class{np.argmax(score)}")
-    final = class_names[np.argmax(score)]
-    # print(
-    # "This image most likely belongs to {} with a {:.2f} percent confidence."
-    # .format(class_names[np.argmax(score)], 100 * np.max(score)))
-    st.text(final)
+    st.text("This image most likely belongs to {} with a {:.2f} percent confidence."
+    .format(class_names[np.argmax(score)], 100 * np.max(score)))
 
 
